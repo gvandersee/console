@@ -1,0 +1,143 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, sans-serif;
+	box-sizing:border-box;
+}
+
+.container {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 165px auto;
+	max-width: 960px;
+	min-width: 560px;
+	width: 80%;
+}
+
+/* Section */
+.container section {
+	border-bottom: 1px solid #CCC;
+	padding: 0 50px;
+	display: flex;
+}
+.container section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.avatar {
+	font-family: FontAwesome;
+	color: white;
+	background: #1485CC;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.avatar.pied-piper:after {
+	content: "\f2ae";
+}
+.avatar.paper-plane:after {
+	content: "\f1d8";
+}
+.avatar.child:after {
+	content: "\f1ae";
+}
+
+/* Main */
+
+.container section .main {
+	width: 60%;
+	float: left;
+	padding: 65px 0px 65px 0px;
+}
+.container section .main .card {
+	border-right: 1px solid #CCC;
+	padding-right: 20px;
+	position: relative;
+	height: 100%;
+}
+.container section .main .content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60%;
+	margin-left: 100px;
+}
+.container section .main .sub-header {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 2em;
+}	
+
+.container section .main header {
+	font-size: 24px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 5px;
+}
+.container section .main .avatar {
+	float: left;
+	font-size: 28px;
+	width: 28px;
+	height: 28px;
+	display: block;
+	padding: 30px;
+	margin-right: 20px;
+}
+
+/* Secondary */
+.container section .secondary {
+	width: 40%;
+	float: left;
+	padding: 65px 0px 20px;
+	text-align: center;
+	margin-left: 20px;
+}
+.container section .secondary header {
+	font-size: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;	
+}
+.container section .secondary .content {
+	margin-bottom: 10px;
+}
+.container section .secondary .avatar {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+	display: block;
+	padding: 15px;
+	margin: 0 auto;
+
+}
+.container section .secondary .sub-header {
+	display: none;
+}
+/* Footer */
+.container footer {
+	padding: 20px;
+}
+.container footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container footer .group {
+	float: left;
+}
+.container footer .group:first-child {
+	width: 36%;
+}
+.container footer .group:nth-child(2) {
+	width: 50%;
+}
+.container footer .group a {
+	display: block;
+	font-size: 11px;
+	margin-bottom: 5px;
+	color: #874BC6;
+}
